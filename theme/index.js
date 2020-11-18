@@ -2,7 +2,7 @@ import overrides from './overrides';
 import palette from './palette';
 import typography from './typography';
 
-export default flureeBasic = {
+export default {
   palette,
   shape: {
     borderRadius: '2px'

@@ -1,6 +1,6 @@
 {
   "name": "fluree-mui-theme",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "MUI theme for Fluree-fied React projects",
   "main": "index.js",
   "scripts": {
@@ -21,9 +21,7 @@
     "url": "https://github.com/fluree/fluree-mui-theme/issues"
   },
   "homepage": "https://github.com/fluree/fluree-mui-theme#readme",
-  "dependencies": {
-    "typeface-cooper-hewitt": "^1.1.13"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@material-ui/core": "^4.11.0",
     "react": "^17.0.1",

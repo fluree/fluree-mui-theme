@@ -1,26 +1,26 @@
-export default typography = {
+export default {
   fontFamily: "'Cooper Hewitt', 'Open Sans', 'Roboto Condensed'",
   h5: {
-    fontWeight: "bold",
-    lineHeight: "31px"
+    fontWeight: 'bold',
+    lineHeight: '31px'
   },
   h6: {
-    fontWeight: "bold",
-    letterSpacing: "0.0015em",
+    fontWeight: 'bold',
+    letterSpacing: '0.0015em'
   },
   subtitle1: {
-    fontFamily: "Cooper Hewitt",
-    fontWeight: 800,
+    fontFamily: 'Cooper Hewitt',
+    fontWeight: 800
   },
   subtitle2: {
-    fontFamily: "Cooper Hewitt",
-    fontWeight: 800,
+    fontFamily: 'Cooper Hewitt',
+    fontWeight: 800
   },
   body1: {
-    fontFamily: "Open Sans",
+    fontFamily: 'Open Sans'
   },
   body2: {
-    fontFamily: "Open Sans",
-    lineHeight: "24px"
-  },
+    fontFamily: 'Open Sans',
+    lineHeight: '24px'
+  }
 };
