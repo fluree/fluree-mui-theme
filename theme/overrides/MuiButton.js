@@ -4,56 +4,56 @@ import {
   twilight,
   white,
   lightGrey,
-  transparent,
-} from "../../themes/colors";
+  transparent
+} from '../palette/colors';
 
 const contained = (color) => ({
   backgroundColor: color,
   border: `2px solid ${color}`,
-  fontSize: "1rem",
+  fontSize: '1rem',
   color: white,
-  "&:hover": {
+  '&:hover': {
     backgroundColor: white,
-    color: color,
+    color: color
   },
-  "&$disabled": {
-    borderColor: transparent,
-  },
+  '&$disabled': {
+    borderColor: transparent
+  }
 });
 
 const outlined = (color) => ({
   border: `2px solid ${color}`,
-  padding: "8px 15px",
-  fontSize: "1rem",
+  padding: '8px 15px',
+  fontSize: '1rem',
   color: color,
-  "&:hover": {
+  '&:hover': {
     backgroundColor: color,
     color: white,
-    borderWidth: "2px",
+    borderWidth: '2px'
   },
-  "&$disabled": {
-    borderWidth: "2px",
-    borderColor: lightGrey,
-  },
+  '&$disabled': {
+    borderWidth: '2px',
+    borderColor: lightGrey
+  }
 });
 
-const button = {
+export default {
   root: {
-    fontSize: "1rem",
-    padding: "8px 15px",
-    lineHeight: "16px",
-    "&$disabled": {
-      borderColor: "#979797",
-    },
+    fontSize: '1rem',
+    padding: '8px 15px',
+    lineHeight: '16px',
+    '&$disabled': {
+      borderColor: '#979797'
+    }
   },
   text: {
-    fontWeight: "bold",
+    fontWeight: 'bold'
   },
   textPrimary: {
-    color: flureeBlue,
+    color: flureeBlue
   },
   textSecondary: {
-    color: flurple,
+    color: flurple
   },
   contained: contained(twilight),
   containedPrimary: contained(flureeBlue),
@@ -62,13 +62,11 @@ const button = {
   outlinedPrimary: outlined(flureeBlue),
   outlinedSecondary: outlined(flurple),
   sizeSmall: {
-    padding: "2px 10px",
-    fontSize: "0.875rem",
+    padding: '2px 10px',
+    fontSize: '0.875rem'
   },
   sizeLarge: {
-    padding: "14px 20px",
-    fontSize: "1.25rem",
-  },
+    padding: '14px 20px',
+    fontSize: '1.25rem'
+  }
 };
-
-export default button;

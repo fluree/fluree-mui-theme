@@ -1,21 +1,21 @@
-import { flureeBlue, flurple, twilight, white } from "../colors";
+import { flureeBlue, flurple, twilight, white } from '../palette/colors';
 
 const contained = (color) => ({
   color: white,
   background: color,
   border: `2px solid ${color}`,
-  "&:not(:last-child)": {
-    borderColor: color,
+  '&:not(:last-child)': {
+    borderColor: color
   },
-  "&:hover": {
-    background: "#FFFFFF",
+  '&:hover': {
+    background: white,
     color: color,
     borderColor: color
     // borderWidth: "2px"
-  },
+  }
 });
 
-const buttonGroup = {
+export default {
   groupedContained: contained(twilight),
   groupedContainedHorizontal: {
     // "&:not(:last-child)": {
@@ -24,30 +24,28 @@ const buttonGroup = {
   },
   groupedOutlined: {
     color: twilight,
-    background: "rgba(0, 0, 0, 0)",
-    "&:hover": {
+    background: 'rgba(0, 0, 0, 0)',
+    '&:hover': {
       background: twilight,
-      color: "#FFFFFF",
-    },
+      color: white
+    }
   },
   groupedContainedPrimary: contained(flureeBlue),
   groupedOutlinedPrimary: {
     color: flureeBlue,
-    background: "rgba(0, 0, 0, 0)",
-    "&:hover": {
+    background: 'rgba(0, 0, 0, 0)',
+    '&:hover': {
       background: flureeBlue,
-      color: "#FFFFFF",
-    },
+      color: white
+    }
   },
   groupedContainedSecondary: contained(flurple),
   groupedOutlinedSecondary: {
     color: flurple,
-    background: "rgba(0, 0, 0, 0)",
-    "&:hover": {
+    background: 'rgba(0, 0, 0, 0)',
+    '&:hover': {
       background: flurple,
-      color: "#FFFFFF",
-    },
-  },
+      color: white
+    }
+  }
 };
-
-export default MuiButtonGroup;
